@@ -1,0 +1,94 @@
+
+
+#principal_msg {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.principal_msg_title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+  color: #1e3c4c;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.principal_msg_sub {
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+li a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+
+  color: #666;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ddd;
+}
+
+.secundary-button {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #00cc33;
+  border-radius: 4px;
+  width: 100px;
+  padding: 8px 20px;
+  margin-inline-end: 30px;
+  border-color: #00cc33;
+  color: #ffffff;
+}
+
+.create-button {
+  background-color: #00cc33;
+  border-color: #00cc33;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px 24px;
+}
+
+.create-button a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.zap {
+  margin-left: 1000px;
+  margin-top: 120px;
+}
+
+footer {
+  height: 20px;
+}
+.img {
+  margin-left: 200px;
+  max-width: 200px;
+  margin-top: -300px;
+}
+.img1 {
+  margin-left: 100px;
+  margin-top: -160px;
+
+}
+a{
+  color: #ffffff;
+  
+}

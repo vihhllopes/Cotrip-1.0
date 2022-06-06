@@ -1,0 +1,112 @@
+
+.input-title {
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .input-title2 {
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+  }
+  
+  .title_form1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    color: #1e3c4c;
+    text-align: center;
+     font-weight:bold;
+  
+  }
+  #subtitle_form1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    color: #1e3c4c;
+    text-align: center;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="select"],
+  input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #00cc33;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .button {
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+  }
+  
+  .card_form1 {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #1e3c4c;
+    margin-top: 15px;
+    padding: 25px;
+    margin-left: 380px;
+    
+  }
+  
+  .linkButton {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  
+  #form-button {
+    font-size: 15px;
+    font-family: "Quicksand", "sans-serif";
+  }
+  
+  /* Formulário 0 - Destino e outras informações */
+  
+  .card_form0 {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #93c744;
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 380px;
+  }
+  
+  #box-title {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Quicksand", "sans-serif";
+    font-size: 28px;
+  }
+  
+  .form-button0 {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #3b9cad;
+    border-color: #3b9cad;
+    font-family: "Quicksand", "sans-serif";
+    size: 30px;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }

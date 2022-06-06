@@ -1,0 +1,84 @@
+.principal-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    color: #1e3c4c;
+  }
+  
+  .form-section-title {
+    margin-left: 65px;
+    margin-bottom: 5px;
+  }
+  
+  .section_form {
+    width: 40%;
+    padding: 20px;
+    margin-left: 400px;
+  }
+  
+  fieldset {
+    background-color: #f2f2f2;
+    margin-top: 30px;
+  }
+  
+  legend {
+    background-color: #1e3c4c;
+    color: white;
+    padding: 5px 10px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .input-field,
+  select {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }
+  
+  .input-field,
+  .input-title {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+  }
+  
+  .input-title2 {
+    color: white;
+  }
+  
+  #cover_img,
+  #profile_img {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+  }
+  
+  .form-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #00cc33;
+    font-family: "Quicksand", "sans-serif";
+    size: 30px;
+  }
+  
+  #note {
+    font-size: 12px;
+    font-family: "Quicksand", "sans-serif";
+    color: #5c5e5e;
+  }
+  #subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    color: #1e3c4c;
+    text-align: center;
+  }
+  .errordestCad{
+     font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    color: #cc0000;
+    font-weight: bolder;
+  }

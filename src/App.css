@@ -1,0 +1,64 @@
+ul {
+  float: right;
+  padding-bottom: 15px;
+  list-style-type: none;
+  margin-right: 60px;
+  background-color: none;
+  margin-top: -100px;
+}
+body {
+    background-color: #dfdfdf;
+    margin-top: 8%;
+  
+    background-image: url(./components/Img/capa.png);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #fef9f9;
+  }
+  .link {
+    color: #00cc33;
+  }
+  .error{
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    color: #00cc33;
+    font-weight: bolder;
+  }
+  .asking {
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  #form-button {
+    background-color: #00cc33;
+    color: #ffffff;
+    margin-left: 30%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #form-button:hover {
+    background-color: #45a049;
+  }
+  
+  .button {
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+  }
+  
+  .linkButton {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  
+  #form-button {
+    font-size: 15px;
+    font-family: "Quicksand", "sans-serif";
+  }
+  

@@ -1,0 +1,324 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+#img{
+ 
+ padding-top: 20px;
+ float: left;
+}
+#btn{
+  margin-top: 50px;
+  margin-left: 40px;   
+  float: left;
+}
+.sidebar{
+  display: none;
+}
+#bar{
+  height:16vh;
+  background-color: #333B3A;
+}
+.sidenav {
+  height: 129vh;
+  display: block;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: px;
+  left: 0;
+  background-color: #2C3332;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 10px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main{
+  transition: 1s;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#rodape{
+    height: 6vh;
+    width: 100%;
+    background-color: #333B3A;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.cont-a{
+background-color: whitesmoke;
+width: 70%;
+height: 135vh;
+float: left;
+}
+.cont-b{
+padding-left: 4px;
+background-color:rgb(224, 219, 219);
+width: 30%;
+height: 130vh;
+float: left;
+
+}
+a:link{
+text-decoration: none;
+}
+#pacote{
+display: flex;
+justify-content: flex-start;
+padding: 15px;
+position: absolute;
+font-size: 20px;
+}
+#editarInfo{
+float: right;
+padding: 15px;
+font-size: 15px; 
+}
+#informativo{
+position: absolute;
+top: 150px;
+width: 67vw ;
+border-radius: 3px;
+background-color: rgb(241, 233, 197);
+left: 1vw;
+height: 50px;
+font-size: 13px;
+box-shadow: 0px 0px 1px 1px rgb(224, 219, 219);
+}
+.infoP{
+padding: 5px;
+padding-left: 18px;
+}
+#infoTrip{
+position: absolute;
+top: 210px;
+width: 67vw;
+left: 1vw;
+height: 230px;
+border-radius: 3px;
+background-color: rgb(224, 219, 219);
+box-shadow: 0px 0px 1px 1px rgb(224, 219, 219);
+display: flex;
+flex-direction: column;
+
+}
+#destiny{
+font-size: 13px;
+padding-left: 15px;
+padding-top: 20px;
+position: absolute; 
+}
+#qtdPessoas{
+font-size: 13px;
+padding-top: 80px;
+padding-left: 15px;
+}
+#data{
+font-size: 13px;
+padding-top: 15px;
+padding-left: 15px; 
+}
+#meta{
+ font-size: 13px;
+ position: absolute;
+ margin-left: 29.7vw;
+ padding: 20px;  
+}
+#agenteCO{
+width: 29.7vw;
+position: absolute;
+margin-left: 31vw;
+margin-top: 10vh;
+}
+#ajudaPerfil{
+font-size: 13px;
+}
+#btnAgente{
+width: 300px;
+height: 40px;
+font-size: 13px;
+border-radius: 5px;
+color:#f1f1f1;
+background-color: rgb(37, 146, 37);
+}
+.infoDetermine{
+color: gray;
+}
+#infoCoEdit{
+width: 68vw;
+position: absolute;
+top: 450px 
+}
+#infoComplementares{
+font-size: 20px;
+padding-left: 15px;
+position: absolute;
+display: flex;
+justify-content: flex-start;
+}
+#editarInfo2{
+font-size: 15px;
+float: right;
+top: 25px;
+}
+#linhaH2{
+width: 67vw;
+margin-top: 35px;
+margin-left: 1vw;
+margin-right: 1vw;
+}
+#perguntas{
+width: 67vw;
+font-size: 13px;
+position: absolute;
+top: 500px;
+}
+#motivoAlt{
+padding-left: 15px;
+position: absolute;
+}
+#opcoesHosp{
+float: right;
+top: 25px;
+margin-right: 200px;
+}
+#plan{
+position: absolute;
+top: 635px;
+padding: 15px;
+}
+#linhaH3{
+width: 67vw;
+margin-top: 590px;
+margin-left: 1vw;
+}
+#boxs{
+display: flex;
+gap: 48px;
+
+}
+#box1{
+width: 20vw;
+height: 23vh;
+border: solid 0.5px grey;
+text-align: center;
+margin-left: 1vw;
+}
+#box2{
+width: 20vw;
+height: 23vh;
+border: solid 0.5px grey;
+text-align: center;
+}
+#box3{
+width: 20vw;
+height: 23vh;
+border: solid 0.5px grey;
+text-align: center;
+margin-right: 1vw;
+}
+
+#acessarPerfil{
+position: absolute;
+padding: 15px;
+font-size: 15px;
+}
+#endereco{
+position: absolute;
+margin-top: 40px;
+margin-left: 15px;
+}
+#linhaH4{
+margin-left: 15px;
+margin-top: 70px;
+width: 370px;
+}
+#progreBar{
+ position: absolute;
+ width: 25%;
+ margin-top: 30px;
+ margin-left: 60px; 
+}
+#barra{
+background-color: rgb(65, 206, 65);
+width: 270px;
+height: 20px;
+border-radius: 70px;
+position: absolute;
+}
+
+#ponto1{
+font-size: 25px;
+top: 0px;
+margin-left: 20px;
+}
+#ponto2{
+font-size: 25px;
+margin-right: 30px; 
+}
+#ord{
+display: flex;
+justify-content: space-between;
+}
+#infohr{
+display: flex;
+gap: 30px; 
+}
+#infohr1{
+margin-top: 30px;
+margin-left: 30px;
+}
+#infohr2{
+margin-top: 30px;
+}
+#infohr3{
+margin-top: 30px;
+margin-right: 5px;
+padding-right: 10px;
+}
+
+#linksEsD{
+font-size: 12px;
+margin-left: 30px;
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+#chat{
+border-radius: 100%;
+-o-border-radius: 100%;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+width: 50px;
+height: 50px;
+background-color: rgb(37, 146, 37);
+position: fixed;
+right: 10px;
+
+}
+

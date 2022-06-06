@@ -1,0 +1,43 @@
+
+  
+  header {
+    text-align: center;
+  }
+  
+  .input-title {
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .input-title2 {
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+  }
+  
+  #title_form1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px;
+    color: #1e3c4c;
+    text-align: center;
+  }
+  #subtitle_form1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    color: #1e3c4c;
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="select"],
+  input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
