@@ -56,5 +56,5 @@ Os forms foram criados em react.js . Validações de campos foram realizadas atr
 
 
 ## Acesso ao projeto
-https://infallible-morse-591f38.netlify.app
+https://cotrip-1-0.vercel.app/
 
