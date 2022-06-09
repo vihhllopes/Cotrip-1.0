@@ -1,7 +1,7 @@
 import "./criar.css";
 import "../../App.css";
 import React, { useState } from "react";
-import {Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Criar = () => {
   const [email, setEmail] = useState("");
@@ -10,19 +10,31 @@ const Criar = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
- const handleSignup = () => {
-   if (!email | !campaign | !senha) {
-     setError("*Preencha todos os campos");
-     return;
-   }
-   navigate("/Destino");
- };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email | !campaign | !senha) {
+      setError("*Preencha todos os campos");
+      return;
+    }
+    localStorage.setItem("email", email);
+    localStorage.setItem("senha", senha);
+    localStorage.setItem("campaign", campaign);
+    navigate("/Destino");
+  };
+
+  let aTagUrl = "";
+
   return (
     <div>
       <h1 className="title_form1">Crie agora sua CoTrip!</h1>
       <h3 id="subtitle_form1">Vamos te ajudar a preparar sua campanha!</h3>
       <div className="card_form1">
-        <form id="form1" name="userForm" action="./form2.html" method="GET">
+        <form
+          id="form1"
+          name="userForm"
+          action="./form2.html"
+          onSubmit={handleSubmit}
+        >
           <label htmlFor="campaign" className="input-title2" required>
             Quero iniciar uma campanha chamada:{" "}
           </label>
@@ -64,40 +76,40 @@ const Criar = () => {
             id="manterlogado"
             value=""
           />
-          <label htmlFor="manterlogado" class="input-title2">
+          <label htmlFor="manterlogado" className="input-title2">
             Aceito os{" "}
-            <a className="link" href="#">
+            <a className="link" href={aTagUrl}>
               Termos de Uso
             </a>{" "}
             e{" "}
-            <a className="link" href="#">
+            <a className="link" href={aTagUrl}>
               Política de Privacidade
             </a>
           </label>
           <div>
-               <label className="error">{error}</label>
-           </div>
-          <p>
+            <label className="error">{error}</label>
+          </div>
+          <h3>
             <button
-              type="button"
+              type="submit"
               value="Continuar"
               id="form-button"
-              class="form-button"
-              onClick={handleSignup}
+              className="form-button"
             >
               {" "}
               Criar
             </button>
-            <h3 class="asking">
-              Ainda não tem uma Cotrip?{" "}
-              <Link className="link" to="/Criar">
-                Crie
+            <p className="asking">
+              Já tem uma Cotrip?{" "}
+              <Link className="link" to="/Login">
+                Faça seu login!
               </Link>
-            </h3>
-          </p>
+            </p>
+          </h3>
         </form>
       </div>
     </div>
   );
 };
+
 export default Criar;

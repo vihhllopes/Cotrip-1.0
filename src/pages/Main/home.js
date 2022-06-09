@@ -3,14 +3,14 @@ import "./home.css";
 import "../../App.css";
 import logo from "../../components/Img/logo.png";
 import whatsapp from "../../components/Img/whatsapp.png";
-import {Link}  from "react-router-dom";
+import { Link } from "react-router-dom";
 function Main() {
   return (
     <div className="home">
       <img className="img1" src={logo} />
       <ul>
         <li>
-           <Link to="/">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <a href="#news">Como Funciona</a>
@@ -21,8 +21,12 @@ function Main() {
         <li>
           <a href="#about">Quem já viajou</a>
         </li>
-        <Link to="/Login"><button className="secundary-button">Entrar</button></Link>
-        <Link to="/Criar"><button className="secundary-button">Criar</button></Link>
+        <Link to="/Login">
+          <button className="secundary-button">Entrar</button>
+        </Link>
+        <Link to="/Criar">
+          <button className="secundary-button">Criar</button>
+        </Link>
       </ul>
       <main>
         <div id="principal_msg">

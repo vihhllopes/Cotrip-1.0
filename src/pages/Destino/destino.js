@@ -1,34 +1,40 @@
 import "../../App.css";
-import "../Cadastro/cadastro.css"
+import "../Cadastro/cadastro.css";
 import imgagemEscolhida from "../../components/Img/logo.png";
 import { useState } from "react";
-import {useNavigate} from "react-router-dom"
-import {Link}  from "react-router-dom";
-
-
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Destino() {
   const navigate = useNavigate();
 
-  const[origin, setOrigin] = useState("");
-  const[destination, setDestination] = useState("");
-  const[date, setDate] = useState("");
-  const[datev, setDatev] = useState("");
-  const[valor, setValor] = useState("");
- const [error, setError] = useState("");
-  const handleDestino = () => {
-    if ( !origin | !destination | !date | !datev | !valor ) {
-    setError ("*Preencha todos os campos");
-    return;
+  const [origin, setOrigin] = useState("");
+  const [destination, setDestination] = useState("");
+  const [select, setSelect] = useState("1");
+  const [date, setDate] = useState("");
+  const [datev, setDatev] = useState("");
+  const [valor, setValor] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = () => {
+    if (!origin | !destination | !select | !date | !datev | !valor) {
+      setError("*Preencha todos os campos");
+      return;
     }
+    localStorage.setItem("origem", origin);
+    localStorage.setItem("destino", destination);
+    localStorage.setItem("NumeroPessoas", select);
+    localStorage.setItem("dataDaIda", date);
+    localStorage.setItem("dataDaVolta", datev);
+    localStorage.setItem("valorArrecadado", valor);
     navigate("/Cadastro");
-  }
+  };
   return (
     <div>
-      <img class= "img1"src={imgagemEscolhida} />
+      <img className="img1" src={imgagemEscolhida} />
       <ul>
         <li>
-            <Link to="/">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <a href="#news">Como Funciona</a>
@@ -39,14 +45,23 @@ function Destino() {
         <li>
           <a href="#about">Quem já viajou</a>
         </li>
-        <Link to="/Login"><button className="secundary-button">Entrar</button></Link>
-        <Link to="/Criar"><button className="secundary-button">Criar</button></Link>
+        <Link to="/Login">
+          <button className="secundary-button">Entrar</button>
+        </Link>
+        <Link to="/Criar">
+          <button className="secundary-button">Criar</button>
+        </Link>
       </ul>
 
       <div className="card_form0">
         <h1 id="box-title">COMECE AGORA!</h1>
-        <form id="form0" name="userForm" action="./form1.html" method="GET">
-          <label htmlfor="origin" className="input-title2" required>
+        <form
+          id="form0"
+          name="userForm"
+          action="./form1.html"
+          onSubmit={handleSubmit}
+        >
+          <label htmlFor="origin" className="input-title2" required>
             Origem
           </label>
           <input
@@ -73,14 +88,19 @@ function Destino() {
           <label htmlFor="guests" className="input-title2">
             Número de Pessoas
           </label>
-          <select id="guests" name="propertyType" class="input-field2">
-            <option value="one">1</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5+</option>
+          <select
+            id="guests"
+            name="propertyType"
+            className="input-field2"
+            value={select}
+            onChange={({ target }) => setSelect(target.value)}
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5+">5+</option>
           </select>
-          
 
           <label htmlFor="checkInDate" className="input-title2">
             Data de ida{" "}
@@ -106,7 +126,7 @@ function Destino() {
             onChange={(e) => [setDatev(e.target.value), setError("")]}
           />
 
-          <label htmlFor="moneyGoal" class="input-title2" required>
+          <label htmlFor="moneyGoal" className="input-title2" required>
             Valor que deseja arrecadar{" "}
           </label>
           <input
@@ -117,16 +137,15 @@ function Destino() {
             value={valor}
             onChange={(e) => [setValor(e.target.value), setError("")]}
           />
- <div>
-               <label className="errordestCad">{error}</label>
-           </div>
+          <div>
+            <label className="errordestCad">{error}</label>
+          </div>
           <p>
             <button
-              type="button"
+              type="submit"
               value="Continuar"
               id="form-button"
               className="form-button"
-              onClick={handleDestino}
             >
               {" "}
               Continuar
