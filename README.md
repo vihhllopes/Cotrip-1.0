@@ -1,7 +1,7 @@
-<h1> Cotrip </h1>
+<h1> Midia Online </h1>
 
  
-📌O que é a cotrip? 
+📌O que é? 
 Site de uma empresa de Marketing
 
 <h2>👨‍💻👩‍💻Desenvolvedores</h2> 
@@ -12,11 +12,12 @@ Site de uma empresa de Marketing
 
 <h2>✨ Tecnologias utilizadas ✨</h2>
 
-- `Frontend`
+
 
 [![HTML5](https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5)](https://www.w3.org/html/)
 [![CSS3](https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css3&logoColor=1572b6)](https://www.w3schools.com/css/)
 [![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react)](https://reactjs.org)[![Javascript](https://img.shields.io/badge/javascript-0d1117?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![styled-components](https://img.shields.io/badge/styled%20components-0d1117?style=for-the-badge&logo=styledcomponents)](https://styled-components.com)
 
 
 
